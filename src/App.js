@@ -1,14 +1,17 @@
 import './App.css';
-import Accodian from './Components/Accodian';
+import Imageslider from './Components/Image slider';
+// import Accodian from './Components/Accodian';
 // import RandomColor from './Components/radom color';
-import StarRating from './Components/starRating';
+// import StarRating from './Components/starRating';
+const url= 'https://picsum.photos/v2/list'
 
 function App() {
   return (
     <div className="App">
       {/* <Accodian /> */}
       {/* <RandomColor /> */}
-      <StarRating />
+      {/* <StarRating /> */}
+      <Imageslider url={url} page={'1'} limit={"10"}/>
     </div>
   );
 }

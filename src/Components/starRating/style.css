@@ -5,3 +5,14 @@
     color: black;
 
 }
+.star-rating {
+    font-size: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 50px;
+    width: 100vw;
+    height: 50vh;
+}
