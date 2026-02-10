@@ -11,7 +11,7 @@ export default function LoadMoreData() {
       setLoading(true);
 
       const response = await fetch(
-        `https://dummyjson.com/products?limit=20&skip=${count * 20}`
+        `https://dummyjson.com/products?limit=10&skip=${count * 10}`
       );
 
       const results = await response.json();
@@ -41,6 +41,11 @@ export default function LoadMoreData() {
             <div key={item.id} className="product">
               <img src={item.thumbnail} alt={item.title} />
               <p>{item.title}</p>
+              <span className="price">KSh {item.price}</span>
+              <span className="discount">
+  -{Math.round(item.discountPercentage)}%
+</span>
+
             </div>
           ))
         ) : (
