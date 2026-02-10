@@ -1,5 +1,6 @@
 import './App.css';
-import Imageslider from './Components/Image slider';
+import LoadMoreData from './Components/load-more-data';
+// import Imageslider from './Components/Image slider';
 // import Accodian from './Components/Accodian';
 // import RandomColor from './Components/radom color';
 // import StarRating from './Components/starRating';
@@ -11,7 +12,9 @@ function App() {
       {/* <Accodian /> */}
       {/* <RandomColor /> */}
       {/* <StarRating /> */}
-      <Imageslider url={url} page={'1'} limit={"10"}/>
+      {/* <Imageslider url={url} page={'1'} limit={"10"}/> */}
+      < LoadMoreData />
+
     </div>
   );
 }
