@@ -1,5 +1,7 @@
 import './App.css';
-import LoadMoreData from './Components/load-more-data';
+// import LoadMoreData from './Components/load-more-data';
+import TreeView from './Components/Tree-View';
+import { Menus } from './Components/Tree-View/data';
 // import Imageslider from './Components/Image slider';
 // import Accodian from './Components/Accodian';
 // import RandomColor from './Components/radom color';
@@ -13,7 +15,9 @@ function App() {
       {/* <RandomColor /> */}
       {/* <StarRating /> */}
       {/* <Imageslider url={url} page={'1'} limit={"10"}/> */}
-      < LoadMoreData />
+      {/* < LoadMoreData /> */}
+
+      <TreeView menus={Menus} />
 
     </div>
   );
