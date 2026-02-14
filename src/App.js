@@ -1,12 +1,13 @@
 import './App.css';
+import QRCodeGenerator from './Components/React-Qr-Code/Index';
 // import LoadMoreData from './Components/load-more-data';
-import TreeView from './Components/Tree-View';
-import { Menus } from './Components/Tree-View/data';
+// import TreeView from './Components/Tree-View';
+// import { Menus } from './Components/Tree-View/data';
 // import Imageslider from './Components/Image slider';
 // import Accodian from './Components/Accodian';
 // import RandomColor from './Components/radom color';
 // import StarRating from './Components/starRating';
-const url= 'https://picsum.photos/v2/list'
+// const url= 'https://picsum.photos/v2/list'
 
 function App() {
   return (
@@ -17,7 +18,9 @@ function App() {
       {/* <Imageslider url={url} page={'1'} limit={"10"}/> */}
       {/* < LoadMoreData /> */}
 
-      <TreeView menus={Menus} />
+      {/* <TreeView menus={Menus} /> */}
+
+      <QRCodeGenerator />
 
     </div>
   );
